@@ -1,5 +1,6 @@
 import { motion, useAnimationControls } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import profileImg from '../assets/profile.jpg';  // Adjust the path based on your folder structure
 
 const Hero = () => {
   const [text, setText] = useState("");
@@ -141,7 +142,7 @@ const Hero = () => {
               {/* Profile image */}
               <div className="relative rounded-full overflow-hidden border-4 border-blue-500/20 aspect-square shadow-xl">
                 <img 
-                  src={profileImage}
+                  src={profileImg}
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
