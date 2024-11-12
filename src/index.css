@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional: Add scroll padding to account for fixed navbar */
+html {
+  scroll-padding-top: 80px; /* Adjust this value based on your navbar height */
+}
