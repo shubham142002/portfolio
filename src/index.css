@@ -17,7 +17,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #161f32; /* Background of the scrollbar track */
+  background: #17243f; /* Background of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -26,5 +26,5 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background:#111827; /* Color of the scrollbar thumb on hover */
+  background:#1a3060; /* Color of the scrollbar thumb on hover */
 }
