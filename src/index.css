@@ -10,3 +10,21 @@ html {
 html {
   scroll-padding-top: 80px; /* Adjust this value based on your navbar height */
 }
+
+/* App.css */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #161f32; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0c2864; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:#111827; /* Color of the scrollbar thumb on hover */
+}
