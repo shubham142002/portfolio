@@ -17,10 +17,19 @@ const Navbar = () => {
 
     const handleNavigation = (sectionId) => {
         setIsOpen(false);
-        const section = document.getElementById(sectionId);
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
+        
+        setTimeout(() => {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                const navHeight = 64;
+                const sectionTop = section.offsetTop - navHeight;
+                
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            }
+        }, 300);
     };
 
     // Navigation Items with icons
