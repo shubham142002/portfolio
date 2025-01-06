@@ -158,7 +158,7 @@ const Hero = () => {
                                 </a>
                                 {/* Instagram */}
                                 <a
-                                    href='https://www.instagram.com/yourusername'
+                                    href='https://www.instagram.com/__shubham_1_4/'
                                     target='_blank'
                                     rel='noopener noreferrer'
                                     className='text-gray-400 hover:text-pink-500 transition-colors'
@@ -174,7 +174,7 @@ const Hero = () => {
 
                                 {/* WhatsApp */}
                                 <a
-                                    href='https://wa.me/yourphonenumber'
+                                    href='https://wa.me/7567618333'
                                     target='_blank'
                                     rel='noopener noreferrer'
                                     className='text-gray-400 hover:text-green-500 transition-colors'
