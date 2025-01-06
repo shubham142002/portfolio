@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,33 +9,36 @@ const Contact = () => {
     message: ''
   });
 
-
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // EmailJS dynamic parameters
+    // EmailJS dynamic parameters - make sure these match your template variables
     const templateParams = {
-      name: formData.name, // User's name
-      email: formData.email, // User's email
-      message: formData.message, // User's message
+      to_name: "Shubham",
+      user_name: formData.name,
+      name: formData.name,
+      from_name: formData.name,
+      user_email: formData.email,
+      reply_to: formData.email,
+      email: formData.email,
+      message: formData.message,
     };
 
     emailjs
       .send(
-        "service_uugftft", // Replace with your EmailJS Service ID
-        "template_e4crj1i", // Replace with your EmailJS Template ID
+        "service_uugftft",
+        "template_e4crj1i",
         templateParams,
-        "Ijk9GvhmV0Y_yz1qX" // Replace with your EmailJS Public Key
+        "Ijk9GvhmV0Y_yz1qX"
       )
       .then(
         (result) => {
           alert("Message sent successfully!");
-          setFormData({ name: "", email: "", message: "" }); // Reset form
+          setFormData({ name: "", email: "", message: "" });
         },
         (error) => {
           console.error("Error sending email:", error);
-          alert("Failed to send the message. Please try again later.");
+          alert("Failed to send message. Please try again later.");
         }
       );
   };
