@@ -36,7 +36,7 @@ const Skills = () => {
     {
       category: "Tools & Others",
       technologies: [
-        { name: "Git", level: 85 },
+        { name: "GitHub", level: 90 },
         { name: "Docker", level: 70 },
         { name: "AWS", level: 65 },
         { name: "Figma", level: 75 },

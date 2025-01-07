@@ -1,15 +1,24 @@
 import { motion, useAnimation } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import myportfolio from '../assets/myportfolio.png';
+import fastclick from '../assets/fastclick.png';
 
 const projects = [
   {
-    title: "Project 1",
-    description: "Description of project 1",
-    image: "/project1.jpg",
-    tech: ["React", "TailwindCSS", "Node.js"],
-    link: "#"
+    title: "My Portfolio",
+    description: "A showcase of my skills and projects as a web and application developer, highlighting creativity, expertise, and innovation.",
+    image:myportfolio,
+    tech: ["React", "TailwindCSS", "Node.js","EmailJs"],
+    link: "https://portfolio-shubham-patel.vercel.app/"
   },
-  // Add more projects...
+  {
+    title: "FastClick Entertainment",
+    description: "A photography website for Fastclick Entertainment, designed to display stunning photos and provide a great user experience.",
+    image: fastclick,
+    tech: ["React", "TailwindCSS", "Node.js", "Cloudinary", "EmailJS"],
+    link: "https://fast-click.vercel.app/"
+  },
+  // Add more projects as needed
 ];
 
 const Projects = () => {
@@ -55,13 +64,15 @@ const Projects = () => {
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              className="bg-gray-800 rounded-lg overflow-hidden max-w-sm mx-auto"
+              className="bg-gray-800 rounded-xl overflow-hidden max-w-sm mx-auto"
             >
-              <img
-                src={projects[currentIndex].image}
-                alt={projects[currentIndex].title}
-                className="w-full h-48 object-cover"
-              />
+              <div className="p-4">
+                <img
+                  src={projects[currentIndex].image}
+                  alt={projects[currentIndex].title}
+                  className="w-full h-40 object-cover rounded-xl shadow-lg"
+                />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{projects[currentIndex].title}</h3>
                 <p className="text-gray-400 mb-4">{projects[currentIndex].description}</p>
@@ -77,6 +88,8 @@ const Projects = () => {
                 </div>
                 <a
                   href={projects[currentIndex].link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-blue-500 hover:text-blue-400"
                 >
                   View Project →
@@ -107,13 +120,15 @@ const Projects = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="bg-gray-800 rounded-lg overflow-hidden"
+              className="bg-gray-800 rounded-xl overflow-hidden"
             >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-48 object-cover"
-              />
+              <div className="p-4">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-50 object-cover rounded-xl shadow-lg"
+                />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-gray-400 mb-4">{project.description}</p>
@@ -129,6 +144,8 @@ const Projects = () => {
                 </div>
                 <a
                   href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-blue-500 hover:text-blue-400"
                 >
                   View Project →
