@@ -2,6 +2,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import myportfolio from '../assets/myportfolio.png';
 import fastclick from '../assets/fastclick.png';
+import shivom from '../assets/shivom.png';
 
 const projects = [
   {
@@ -17,6 +18,13 @@ const projects = [
     image: fastclick,
     tech: ["React", "TailwindCSS", "Node.js", "Cloudinary", "EmailJS"],
     link: "https://fast-click.vercel.app/"
+  },
+  {
+    title: "ShivOm Creation",
+    description: "An e-commerce mobile application developed for Shivom Creation using Flutter, Dart, and Firebase, featuring seamless user experience and efficient functionality.",
+    image: shivom,
+    tech: ["Flutter", "Dart", "Firebase"],
+    // link: ""
   },
   // Add more projects as needed
 ];
