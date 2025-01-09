@@ -127,7 +127,7 @@ const Hero = () => {
                                 href="#contact"
                                 className="bg-blue-500 hover:bg-blue-600 text-white px-6 lg:px-8 py-2 lg:py-3 rounded-full text-base lg:text-lg font-semibold transition-colors text-center"
                             >
-                                Get in Touch
+                                Get In Touch
                             </a>
                             <a
                                 href="#projects"

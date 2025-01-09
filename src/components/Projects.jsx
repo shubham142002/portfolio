@@ -6,13 +6,6 @@ import shivom from '../assets/shivom.png';
 
 const projects = [
   {
-    title: "My Portfolio",
-    description: "A showcase of my skills and projects as a web and application developer, highlighting creativity, expertise, and innovation.",
-    image:myportfolio,
-    tech: ["React", "TailwindCSS", "Node.js","EmailJs"],
-    link: "https://portfolio-shubham-patel.vercel.app/"
-  },
-  {
     title: "FastClick Entertainment",
     description: "A photography website for Fastclick Entertainment, designed to display stunning photos and provide a great user experience.",
     image: fastclick,
