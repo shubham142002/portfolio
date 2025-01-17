@@ -21,24 +21,24 @@ const Skills = () => {
         { name: "React", level: 90 },
         { name: "JavaScript", level: 85 },
         { name: "HTML/CSS", level: 95 },
-        { name: "Tailwind CSS", level: 88 },
+        { name: "Tailwind CSS", level: 90 },
       ]
     },
     {
       category: "Backend",
       technologies: [
-        { name: "Node.js", level: 82 },
-        { name: "Python", level: 75 },
+        { name: "Node.js", level: 85 },
+        { name: "Python/Django", level: 75 },
         { name: "MongoDB", level: 80 },
-        { name: "SQL", level: 78 },
+        { name: "PostgreSQL", level: 70 },
       ]
     },
     {
       category: "Tools & Others",
       technologies: [
         { name: "GitHub", level: 90 },
-        { name: "Docker", level: 70 },
-        { name: "AWS", level: 65 },
+        { name: "Bootstap", level: 70 },
+        { name: "Shadcn", level: 75 },
         { name: "Figma", level: 75 },
       ]
     }
