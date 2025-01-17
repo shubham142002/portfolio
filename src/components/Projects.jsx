@@ -1,10 +1,17 @@
 import { motion, useAnimation } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import myportfolio from '../assets/myportfolio.png';
 import fastclick from '../assets/fastclick.png';
 import shivom from '../assets/shivom.png';
+import tweet from '../assets/tweet.png';
 
 const projects = [
+  {
+    title: "Tweet Message",
+    description: "Developed a beginner Django-based web app enabling user account creation and tweet management with create, edit, and delete features.",
+    image: tweet,
+    tech: ["Python", "Django", "Node.js", "Bootstrap"],
+    // link: ""
+  },
   {
     title: "FastClick Entertainment",
     description: "A photography website for Fastclick Entertainment, designed to display stunning photos and provide a great user experience.",
