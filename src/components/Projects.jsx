@@ -17,7 +17,7 @@ const projects = [
     description: "A photography website for Fastclick Entertainment, designed to display stunning photos and provide a great user experience.",
     image: fastclick,
     tech: ["React", "TailwindCSS", "Node.js", "Cloudinary", "EmailJS"],
-    link: "https://fast-click.vercel.app/"
+    link: "https://photography-fast-click.vercel.app/"
   },
   {
     title: "ShivOm Creation",
