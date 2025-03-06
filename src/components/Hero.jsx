@@ -46,8 +46,10 @@ const Hero = () => {
     text: codeSnippets[Math.floor(Math.random() * codeSnippets.length)],
     color: neonColors[Math.floor(Math.random() * neonColors.length)],
     left: Math.random() * 100,
+    top: 50 + (Math.random() * 20 - 10), // Center vertically with slight variation
     delay: Math.random() * 2,
     duration: 2 + Math.random() * 2,
+    direction: Math.random() > 0.5 ? -1 : 1, // Random direction (up or down)
   });
 
   // Generate initial code elements
@@ -73,11 +75,13 @@ const Hero = () => {
   const floatingCodeVariants = {
     initial: {
       y: 0,
+      x: 0,
       opacity: 0,
       scale: 0.8,
     },
     animate: (i) => ({
-      y: -150,
+      y: i.direction * 150, // Move up or down based on direction
+      x: (Math.random() * 100 - 50), // Add some horizontal movement
       opacity: [0, 1, 0],
       scale: [0.8, 1, 0.8],
       transition: {
@@ -296,13 +300,17 @@ const Hero = () => {
                 {codeElements.map((code, index) => (
                   <motion.div
                     key={`${index}-${code.text}`}
-                    custom={{ duration: code.duration, delay: code.delay }}
+                    custom={{ 
+                      duration: code.duration, 
+                      delay: code.delay,
+                      direction: code.direction
+                    }}
                     variants={floatingCodeVariants}
                     initial="initial"
                     animate="animate"
                     className={`absolute font-mono text-sm ${code.color} whitespace-nowrap`}
                     style={{
-                      top: '0%',
+                      top: `${code.top}%`,
                       left: `${code.left}%`,
                       textShadow: '0 0 10px currentColor',
                     }}
