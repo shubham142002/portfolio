@@ -34,7 +34,7 @@ const Skills = () => {
       ]
     },
     {
-      category: "Tools & Others",
+      category: "Editor Tools & Others",
       technologies: [
         { name: "VS Code, Cursor", level: 94 },
         { name: "GitHub", level: 90 },
