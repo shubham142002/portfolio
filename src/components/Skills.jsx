@@ -39,7 +39,7 @@ const Skills = () => {
         { name: "VS Code, Cursor", level: 94 },
         { name: "GitHub", level: 90 },
         { name: "Bootstap,Shadcn", level: 80 },
-        { name: "Figma", level: 75 },
+        { name: "Canva", level: 75 },
       ]
     }
   ];
