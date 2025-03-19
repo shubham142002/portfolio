@@ -7,7 +7,7 @@ import tweet from '../assets/tweet.png';
 const projects = [
   {
     title: "Tweet Message",
-    description: "Developed a beginner Django-based web app enabling user account creation and tweet management with create, edit, and delete features.",
+    description: "Developed a beginner Django-based web app enabling user account creation and tweet management with create, read, update and delete features.",
     image: tweet,
     tech: ["Python", "Django", "Node.js", "Bootstrap"],
     // link: ""
