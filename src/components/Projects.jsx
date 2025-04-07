@@ -3,8 +3,16 @@ import { useState, useEffect } from 'react';
 import fastclick from '../assets/fastclick.png';
 import shivom from '../assets/shivom.png';
 import tweet from '../assets/tweet.png';
+import dhrumil from '../assets/dhrumil.png';
 
 const projects = [
+  {
+    title: "Hotel Advertisement Website",
+    description: "A hotel advertisement website developed using Next.js, TypeScript, TailwindCSS, email.js and Node.js, featuring a user-friendly interface and responsive design.",
+    image: dhrumil,
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "Node.js", "Cloudinary", "EmailJS"],
+    link: "https://dhrumil-patel-profile.vercel.app/"
+  },
   {
     title: "Tweet Message",
     description: "Developed a beginner Django-based web app enabling user account creation and tweet management with create, read, update and delete features.",
