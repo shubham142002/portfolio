@@ -140,7 +140,7 @@ const Contact = () => {
                   </svg>
                 </a>
                 <a
-                  href='https://www.linkedin.com/in/shubham1402'
+                  href='https://www.linkedin.com/in/shubham1428'
                   target='_blank'
                   rel='noopener noreferrer'
                   className='text-gray-400 hover:text-blue-500 transition-colors'
